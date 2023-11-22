@@ -26,6 +26,18 @@ btn.addEventListener("click", openModal);
 btn2.addEventListener("click", openModal);
 modal.addEventListener("click", closeModal);
 
+/*   BURGER  */
+
+const iconMenu = document.querySelector('.menu__icon');
+if (iconMenu) {
+  const menuBody = document.querySelector('.menu');
+  iconMenu.addEventListener("click", function (e) {
+    document.body.classList.toggle('_lock');
+    iconMenu.classList.toggle('_active');
+    menuBody.classList.toggle('_active');
+  });
+}
+
 /*     TABS  */
 
 const tabs = document.getElementById("tabs");
