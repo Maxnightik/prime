@@ -38,6 +38,16 @@ if (iconMenu) {
   });
 }
 
+/*    HEADER LINK   */ 
+
+const menuLink = document.querySelector('.menu__link');
+if (menuLink) {
+  menuLink.addEventListener("click", function (e) {
+    menuLink.classList.remove('_active');
+  });
+  menuLink.classList.add('_active');
+}
+
 /*     TABS  */
 
 const tabs = document.getElementById("tabs");
