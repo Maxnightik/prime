@@ -116,8 +116,7 @@ iframe {
   border-radius: 50px;
   border: 1px solid #fff;
   border-bottom: 0;
-  background: rgba(255, 255, 255, 0.70);
-  /* background: rgb(199 214 255 / 70%); */
+  background: #657BD3;
   background-blend-mode: soft-light;
   backdrop-filter: blur(35px);
   margin: 4px 0;
@@ -139,7 +138,6 @@ iframe {
 
 .menu__link._active {
   border-radius: 20px;
-  padding: 8px;
   background: #fff;
   transition: all 0.2s ease-in-out;
 }
