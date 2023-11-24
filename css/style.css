@@ -138,6 +138,7 @@ iframe {
 
 .menu__link._active {
   border-radius: 20px;
+  padding: 8px;
   background: #fff;
   transition: all 0.2s ease-in-out;
 }
