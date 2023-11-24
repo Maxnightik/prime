@@ -112,11 +112,12 @@ iframe {
 
 .menu {
   display: flex;
-  /* align-items: flex-end; */
   border-radius: 50px;
   border: 1px solid #fff;
   border-bottom: 0;
-  background: #657BD3;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background: rgb(196 216 255 / 70%);
   background-blend-mode: soft-light;
   backdrop-filter: blur(35px);
   margin: 4px 0;
@@ -136,7 +137,13 @@ iframe {
   padding: 12px 0;
 }
 
-.menu__link._active {
+.menu__link {
+  padding: 8px;
+}
+
+.menu__link._active,
+.menu__link:hover {
+  box-sizing: border-box;
   border-radius: 20px;
   padding: 8px;
   background: #fff;
