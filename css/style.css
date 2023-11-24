@@ -808,6 +808,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 20px;
+  margin-bottom: 0;
 }
 
 .footer__social {
