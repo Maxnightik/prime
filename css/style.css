@@ -121,6 +121,7 @@ iframe {
   background-blend-mode: soft-light;
   backdrop-filter: blur(35px);
   margin: 4px 0;
+  border-bottom: none;
 }
 
 .menu__list {
