@@ -229,6 +229,7 @@ iframe {
   font-weight: 250;
   line-height: normal;
   text-transform: uppercase;
+  padding-top: 136px;
 }
 
 /*     OUR VALUES     */
@@ -259,6 +260,7 @@ iframe {
   /* left: 0; */
 
 }
+
 .values__content-1,
 .values__content-2 {
   display: flex;
@@ -338,6 +340,10 @@ margin-top: -50px;
   flex-flow: column;
   justify-content: center;
   align-items: stretch;
+}
+
+.lines__title {
+      padding-bottom: 80px;
 }
 
 #tabs {
