@@ -682,7 +682,7 @@ margin-top: -50px;
     content: "";
     background-image: url(../img/stage-line.svg);
     background-repeat: no-repeat;
-    inset: 130px 527px 1px;
+    inset: 130px 530px 1px;
 }
 
 .stage-3::after {
@@ -690,7 +690,7 @@ margin-top: -50px;
   content: "";
   background-image: url(../img/stage-line.svg);
   background-repeat: no-repeat;
-  inset: 4px 843px;
+  inset: 4px 854px;
 }
 
 .stage-4::after {
@@ -698,7 +698,7 @@ margin-top: -50px;
   content: "";
   background-image: url(../img/stage-line.svg);
   background-repeat: no-repeat;
-  inset: 127px 0px 1px 1176px;
+  inset: 127px 0px 1px 1183px;
 }
 
 .stage-5::after {
