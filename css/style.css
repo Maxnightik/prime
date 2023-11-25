@@ -598,34 +598,44 @@ margin-top: -50px;
 
 .content__body-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 310px;
 }
 
 .content__body-stage-wrapper {
   display: flex;
-  justify-content: space-around;
   padding: 72px 0;
   position: relative;
+  gap: 51px;
+  justify-content: space-evenly;
 }
 
 .content__body-stage-wrapper::before {
+  position: absolute;
   content: "";
   background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  inset: 80px;
 }
 
 .content__body-stage-company {
-  width: 120px;
-  color: #5a6cc0;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: normal;
+    position: absolute;
+    width: 120px;
+    color: #5a6cc0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -58px;
+    margin-left: 1538px;
 }
 
 .content__body-wrapper-bottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 30px;
+  gap: 341px;
 }
 
 .content__body-processes {
@@ -656,8 +666,48 @@ margin-top: -50px;
   line-height: normal;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
+.stage-1::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/stage-line.svg);
+  background-repeat: no-repeat;
+  inset: 4px 200px;
+}
+
+.stage-2::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/stage-line.svg);
+    background-repeat: no-repeat;
+    inset: 130px 527px 1px;
+}
+
+.stage-3::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/stage-line.svg);
+  background-repeat: no-repeat;
+  inset: 4px 843px;
+}
+
+.stage-4::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/stage-line.svg);
+  background-repeat: no-repeat;
+  inset: 127px 0px 1px 1176px;
+}
+
+.stage-5::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/stage-line.svg);
+  background-repeat: no-repeat;
+  inset: 6px 0px 1px 1499px;
+}
 /*     END STAGE   */
 
 /*     DEVELOPMENT  */
