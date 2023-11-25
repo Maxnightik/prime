@@ -48,7 +48,6 @@
   .values__item_subtitle {
     padding-right: 20px;
   }
-
   .footer__container.container {
     margin-bottom: 0;
   }
@@ -268,11 +267,7 @@
   .values__content-2 .point {
     margin-left: 36px;
   }
-
-  .lines-arrow {
-    display: block;
-  }
-
+  
   footer {
     padding: 5px 0 0 0;
     border-radius: 30px;
