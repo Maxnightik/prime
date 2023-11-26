@@ -28,24 +28,24 @@ modal.addEventListener("click", closeModal);
 
 /*   BURGER  */
 
-const iconMenu = document.querySelector('.menu__icon');
+const iconMenu = document.querySelector(".menu__icon");
 if (iconMenu) {
-  const menuBody = document.querySelector('.menu');
+  const menuBody = document.querySelector(".menu");
   iconMenu.addEventListener("click", function (e) {
-    document.body.classList.toggle('_lock');
-    iconMenu.classList.toggle('_active');
-    menuBody.classList.toggle('_active');
+    document.body.classList.toggle("_lock");
+    iconMenu.classList.toggle("_active");
+    menuBody.classList.toggle("_active");
   });
 }
 
-/*    HEADER LINK   */ 
+/*    HEADER LINK   */
 
-const menuLink = document.querySelector('.menu__link');
+const menuLink = document.querySelector(".menu__link");
 if (menuLink) {
   menuLink.addEventListener("click", function (e) {
-    menuLink.classList.remove('_active');
+    menuLink.classList.remove("_active");
   });
-  menuLink.classList.add('_active');
+  menuLink.classList.add("_active");
 }
 
 /*     TABS  */
@@ -77,23 +77,33 @@ const tabsDevelopment = document.getElementById("tabs__development");
 const contentDevelopment = document.querySelectorAll(".content__development");
 
 const changeClassDevelopment = (element) => {
+  const currTabDevelopment = element.dataset.btn;
+
+  // Переключаем класс .active для вкладок
   for (let i = 0; i < tabsDevelopment.children.length; i++) {
     tabsDevelopment.children[i].classList.remove("active");
   }
   element.classList.add("active");
-};
 
-tabsDevelopment.addEventListener("click", (ele) => {
-  const currTabDevelopment = ele.target.dataset.btn;
-  changeClassDevelopment(ele.target);
+  // Переключаем класс .active для соответствующего контента
   for (let i = 0; i < contentDevelopment.length; i++) {
-    contentDevelopment[i].classList.remove("active");
     if (contentDevelopment[i].dataset.content === currTabDevelopment) {
       contentDevelopment[i].classList.add("active");
+    } else {
+      contentDevelopment[i].classList.remove("active");
     }
   }
-});
+};
 
+// Добавляем обработчик событий для клика по документу
+document.addEventListener("click", (event) => {
+  const clickedTab = event.target.closest(".tab-btn__development");
+
+  // Если клик был внутри вкладки, обрабатываем событие
+  if (clickedTab) {
+    changeClassDevelopment(clickedTab);
+  }
+});
 /*     ACCORDEON   */
 document.querySelectorAll(".accordion-item-triger").forEach((item) =>
   item.addEventListener("click", () => {
