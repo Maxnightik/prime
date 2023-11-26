@@ -432,7 +432,7 @@ iframe {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
-  padding: 40px 0px 32px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .content__subtitle-bottom {
@@ -448,7 +448,7 @@ iframe {
 }
 
 .accordion__digital {
-  padding: 20px 0px 60px;
+  padding: 10px 0px 10px;
   align-items: center;
 }
 
@@ -541,7 +541,7 @@ iframe {
   padding: 10px 16px;
   gap: 9px;
   width: 363px;
-  height: 86px;
+  height: 80px;
   color: #2a2a2a;
   background: #fff;
   font-size: 18px;
@@ -557,7 +557,7 @@ iframe {
 
 .accordion-title {
   width: 275px;
-  height: 86px;
+  height: 80px;
   border-radius: 30px;
   background: #5a6cc0;
 }
