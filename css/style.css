@@ -595,6 +595,11 @@ margin-top: -50px;
   background: #5a6cc0 !important;
   color: #fff;
 }
+
+.accordion__digital .accordion-item-triger {
+  width: 431px;
+}
+
 /*     END ACCORDEON   */
 
 /*     STAGE   */
