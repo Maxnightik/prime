@@ -507,9 +507,12 @@ margin-top: -50px;
 }
 
 .accordion__title-img,
-.content__body-processese-img,
 .content__body-processese-img {
   display: inline;
+}
+
+.content__body-processese-img {
+  padding-right: 8px;
 }
 
 .accordion-item {
