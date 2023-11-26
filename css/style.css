@@ -733,10 +733,10 @@ margin-top: -50px;
 
 .development__step {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 19px;
-  width: 458px;
-  height: 86px;
+  width: 477px;
+  height: 65px;
   color: #2a2a2a;
   background: #fff;
   font-size: 18px;
