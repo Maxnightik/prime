@@ -598,7 +598,8 @@ iframe {
   color: #fff;
 }
 
-.accordion__digital .accordion-item-triger {
+.accordion__digital .accordion-item-triger,
+.accordion-item-content {
   width: 431px !important;
 }
 
