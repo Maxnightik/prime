@@ -452,7 +452,7 @@ iframe {
   align-items: center;
 }
 
-.accordion-item {
+.accordion__digital .accordion-item {
   margin-bottom: 20px;
 }
 
@@ -598,11 +598,13 @@ iframe {
   color: #fff;
 }
 
-.accordion__digital .accordion-item-triger,
-.accordion-item-content {
+.accordion__digital .accordion-item-triger {
   width: 431px !important;
 }
 
+.accordion__digital .digital__content {
+  width: 431px !important;
+}
 /*     END ACCORDEON   */
 
 /*     STAGE   */
