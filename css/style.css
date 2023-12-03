@@ -319,6 +319,12 @@ iframe {
   color: #2a2a2a;
   line-height: normal;
 }
+
+.values__item_description:hover {
+  background: #5a6cc0;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
 .values__item_title {
   font-size: 24px;
   font-weight: 500;
