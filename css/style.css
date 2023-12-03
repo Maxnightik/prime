@@ -320,10 +320,15 @@ iframe {
   line-height: normal;
 }
 
-.values__item_description:hover {
+.values__item_description.hover,
+.point:hover {
   background: #5a6cc0;
   color: #fff;
   transition: all 0.2s ease-in-out;
+}
+
+.point:hover {
+  border-radius: 50%;
 }
 .values__item_title {
   font-size: 24px;
