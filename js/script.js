@@ -48,6 +48,31 @@ if (menuLink) {
   menuLink.classList.add("_active");
 }
 
+/*    VALUES HOVER   */
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Получаем все элементы с классом .point
+  const points = document.querySelectorAll(".point");
+
+  // Получаем все элементы с классом .values__item_description
+  const valuesItemDescriptions = document.querySelectorAll(
+    ".values__item_description"
+  );
+
+  // Добавляем обработчики событий для каждого .point
+  points.forEach((point, index) => {
+    point.addEventListener("mouseover", () => {
+      // Добавляем класс hover для соответствующего .values__item_description
+      valuesItemDescriptions[index].classList.add("hover");
+    });
+
+    point.addEventListener("mouseout", () => {
+      // Удаляем класс hover для соответствующего .values__item_description
+      valuesItemDescriptions[index].classList.remove("hover");
+    });
+  });
+});
+
 /*     TABS  */
 
 const tabs = document.getElementById("tabs");
