@@ -26,6 +26,53 @@ btn.addEventListener("click", openModal);
 btn2.addEventListener("click", openModal);
 modal.addEventListener("click", closeModal);
 
+/*   BURGER  */
+
+const iconMenu = document.querySelector(".menu__icon");
+if (iconMenu) {
+  const menuBody = document.querySelector(".menu");
+  iconMenu.addEventListener("click", function (e) {
+    document.body.classList.toggle("_lock");
+    iconMenu.classList.toggle("_active");
+    menuBody.classList.toggle("_active");
+  });
+}
+
+/*    HEADER LINK   */
+
+const menuLink = document.querySelector(".menu__link");
+if (menuLink) {
+  menuLink.addEventListener("click", function (e) {
+    menuLink.classList.remove("_active");
+  });
+  menuLink.classList.add("_active");
+}
+
+/*    VALUES HOVER   */
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Получаем все элементы с классом .point
+  const points = document.querySelectorAll(".point");
+
+  // Получаем все элементы с классом .values__item_description
+  const valuesItemDescriptions = document.querySelectorAll(
+    ".values__item_description"
+  );
+
+  // Добавляем обработчики событий для каждого .point
+  points.forEach((point, index) => {
+    point.addEventListener("mouseover", () => {
+      // Добавляем класс hover для соответствующего .values__item_description
+      valuesItemDescriptions[index].classList.add("hover");
+    });
+
+    point.addEventListener("mouseout", () => {
+      // Удаляем класс hover для соответствующего .values__item_description
+      valuesItemDescriptions[index].classList.remove("hover");
+    });
+  });
+});
+
 /*     TABS  */
 
 const tabs = document.getElementById("tabs");
@@ -55,23 +102,33 @@ const tabsDevelopment = document.getElementById("tabs__development");
 const contentDevelopment = document.querySelectorAll(".content__development");
 
 const changeClassDevelopment = (element) => {
+  const currTabDevelopment = element.dataset.btn;
+
+  // Переключаем класс .active для вкладок
   for (let i = 0; i < tabsDevelopment.children.length; i++) {
     tabsDevelopment.children[i].classList.remove("active");
   }
   element.classList.add("active");
-};
 
-tabsDevelopment.addEventListener("click", (ele) => {
-  const currTabDevelopment = ele.target.dataset.btn;
-  changeClassDevelopment(ele.target);
+  // Переключаем класс .active для соответствующего контента
   for (let i = 0; i < contentDevelopment.length; i++) {
-    contentDevelopment[i].classList.remove("active");
     if (contentDevelopment[i].dataset.content === currTabDevelopment) {
       contentDevelopment[i].classList.add("active");
+    } else {
+      contentDevelopment[i].classList.remove("active");
     }
   }
-});
+};
 
+// Добавляем обработчик событий для клика по документу
+document.addEventListener("click", (event) => {
+  const clickedTab = event.target.closest(".tab-btn__development");
+
+  // Если клик был внутри вкладки, обрабатываем событие
+  if (clickedTab) {
+    changeClassDevelopment(clickedTab);
+  }
+});
 /*     ACCORDEON   */
 document.querySelectorAll(".accordion-item-triger").forEach((item) =>
   item.addEventListener("click", () => {

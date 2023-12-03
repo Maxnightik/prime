@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/style-cases.css">
+    <link rel="stylesheet" href="css/style-cases.css" />
 
     <script src="js/script.js" defer></script>
     <script src="js/cases.js" defer></script>
@@ -23,7 +23,11 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__link" href="/">Home</a>
+                <a
+                  class="menu__link _active"
+                  href="https://maxnightik.github.io/prime/"
+                  >Home</a
+                >
               </li>
               <li class="menu__list-item">
                 <a class="menu__link" href="#values">Our values</a>
@@ -32,11 +36,19 @@
                 <a class="menu__link" href="#lines">Business lines</a>
               </li>
               <li class="menu__list-item">
+                <a class="menu__link" href="#cases">Our cases</a>
+              </li>
+              <li class="menu__list-item">
                 <a class="menu__link" href="#footer">Contacts</a>
               </li>
             </ul>
           </nav>
           <button class="contact__btn">Contact us</button>
+          <!-- burger -->
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <!-- burger -->
         </div>
         <h1 class="hero">
           <div class="intelligent">Intelligent</div>
@@ -59,8 +71,63 @@
       </div>
 
       <section id="values">
-        <div class="container">
+        <div class="values__container">
           <h2 class="values__title title">Our values</h2>
+          <div class="values__block">
+            <img class="values__img" src="./img/curve.svg" alt="" />
+          </div>
+          <div class="values__content">
+            <div class="values__content-1">
+              <div class="values__content_item item-1">
+                <div class="values__item_description">
+                  <h4 class="values__item_title">Honesty and openess</h4>
+                  <p class="values__item_subtitle">
+                    We build open and honest relationships with ourselves and
+                    our clients
+                  </p>
+                </div>
+                <span></span>
+                <img class="point" src="./img/point.svg" alt="" />
+              </div>
+              <div class="values__content_item item-2">
+                <div class="values__item_description">
+                  <h4 class="values__item_title">
+                    Constant development and learning
+                  </h4>
+                  <p class="values__item_subtitle">
+                    We don`t stand still and constantly strive to become better
+                  </p>
+                </div>
+                <span></span>
+                <img class="point" src="./img/point.svg" alt="" />
+              </div>
+            </div>
+            <div class="values__content-2">
+              <div class="values__content_item item-3">
+                <img class="point" src="./img/point.svg" alt="" />
+                <span></span>
+                <div class="values__item_description">
+                  <h4 class="values__item_title">
+                    Responsibility and professionalism
+                  </h4>
+                  <p class="values__item_subtitle">
+                    We do our best to achieve our goals and goals our clients
+                  </p>
+                </div>
+              </div>
+              <div class="values__content_item item-4">
+                <img class="point" src="./img/point.svg" alt="" />
+                <span></span>
+                <div class="values__item_description">
+                  <h4 class="values__item_title">Customer focus</h4>
+                  <p class="values__item_subtitle">
+                    We want to surprise and delight our customers with the
+                    quality of services and products
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -71,6 +138,7 @@
             <div id="tabs">
               <div class="tab-btn active" data-btn="1">
                 Infrastructure Managment
+                <img class="lines-arrow" src="./img/lines_arrow.svg" alt="" />
               </div>
               <div class="tab-btn" data-btn="2">Digital transformation</div>
               <div class="tab-btn" data-btn="3">Software Development</div>
@@ -86,15 +154,24 @@
                 <div class="accordion">
                   <div class="accordion__wrapper">
                     <div class="accordion-item">
-                      <div class="accordion-title">
+                      <div class="accordion-item-triger accordion-title-triger">
                         <img
-                          class="accordion__title-img accordion__title-img-white"
+                          class="accordion__title-img"
                           src="./img/icons/icon1.png"
                           alt=""
                         />
                         Architecture
                       </div>
+                      <div
+                        class="accordion-item-content accordion-title-content"
+                      >
+                        We create innovative designs, taking into account the
+                        client's needs, to ensure the optimal functioning of
+                        your business.
+                      </div>
+                    </div>
 
+                    <div class="accordion-item">
                       <div class="accordion-item-triger">
                         <img
                           class="accordion__title-img"
@@ -131,15 +208,24 @@
 
                   <div class="accordion__wrapper">
                     <div class="accordion-item">
-                      <div class="accordion-title">
+                      <div class="accordion-item-triger accordion-title-triger">
                         <img
-                          class="accordion__title-img accordion__title-img-white"
+                          class="accordion__title-img"
                           src="./img/icons/icon4.png"
                           alt=""
                         />
                         Implementation
                       </div>
+                      <div
+                        class="accordion-item-content accordion-title-content"
+                      >
+                        We create innovative designs, taking into account the
+                        client's needs, to ensure the optimal functioning of
+                        your business.
+                      </div>
+                    </div>
 
+                    <div class="accordion-item">
                       <div class="accordion-item-triger">
                         <img
                           class="accordion__title-img"
@@ -240,15 +326,24 @@
 
                   <div class="accordion__wrapper">
                     <div class="accordion-item">
-                      <div class="accordion-title">
+                      <div class="accordion-item-triger accordion-title-triger">
                         <img
-                          class="accordion__title-img accordion__title-img-white"
+                          class="accordion__title-img"
                           src="./img/icons/icon11.png"
                           alt=""
                         />
                         Support
                       </div>
+                      <div
+                        class="accordion-item-content accordion-title-content"
+                      >
+                        We create innovative designs, taking into account the
+                        client's needs, to ensure the optimal functioning of
+                        your business.
+                      </div>
+                    </div>
 
+                    <div class="accordion-item">
                       <div class="accordion-item-triger">
                         <img
                           class="accordion__title-img"
@@ -333,15 +428,24 @@
 
                   <div class="accordion__wrapper">
                     <div class="accordion-item">
-                      <div class="accordion-title">
+                      <div class="accordion-item-triger accordion-title-triger">
                         <img
-                          class="accordion__title-img accordion__title-img-white"
+                          class="accordion__title-img"
                           src="./img/icons/icon17.png"
                           alt=""
                         />
                         IT Process Implementation
                       </div>
+                      <div
+                        class="accordion-item-content accordion-title-content"
+                      >
+                        We create innovative designs, taking into account the
+                        client's needs, to ensure the optimal functioning of
+                        your business.
+                      </div>
+                    </div>
 
+                    <div class="accordion-item">
                       <div class="accordion-item-triger">
                         <img
                           class="accordion__title-img"
@@ -390,7 +494,7 @@
 
                 <div class="accordion__digital">
                   <div class="accordion__wrapper">
-                    <div class="accordion-item">
+                    <div class="accordion-item digital-item">
                       <div class="accordion-item-triger">
                         <img
                           class="accordion__title-img"
@@ -399,7 +503,7 @@
                         />
                         Accounting managment
                       </div>
-                      <div class="accordion-item-content">
+                      <div class="accordion-item-content digital__content">
                         We assess project scope, objectives, and preferences,
                         ensuring a precise understanding of client needs. This
                         crucial initial step sets the foundation for successful
@@ -416,7 +520,7 @@
                         />
                         Documents workflow manegement
                       </div>
-                      <div class="accordion-item-content">
+                      <div class="accordion-item-content digital__content">
                         We assess project scope, objectives, and preferences,
                         ensuring a precise understanding of client needs. This
                         crucial initial step sets the foundation for successful
@@ -435,7 +539,7 @@
                         />
                         Enterprise resource planning
                       </div>
-                      <div class="accordion-item-content">
+                      <div class="accordion-item-content digital__content">
                         We assess project scope, objectives, and preferences,
                         ensuring a precise understanding of client needs. This
                         crucial initial step sets the foundation for successful
@@ -452,7 +556,7 @@
                         />
                         Supply chain management
                       </div>
-                      <div class="accordion-item-content">
+                      <div class="accordion-item-content digital__content">
                         We assess project scope, objectives, and preferences,
                         ensuring a precise understanding of client needs. This
                         crucial initial step sets the foundation for successful
@@ -469,7 +573,7 @@
                         />
                         Project management and tasking
                       </div>
-                      <div class="accordion-item-content">
+                      <div class="accordion-item-content digital__content">
                         We assess project scope, objectives, and preferences,
                         ensuring a precise understanding of client needs. This
                         crucial initial step sets the foundation for successful
@@ -488,7 +592,7 @@
                         />
                         Customer relationship management
                       </div>
-                      <div class="accordion-item-content">
+                      <div class="accordion-item-content digital__content">
                         We assess project scope, objectives, and preferences,
                         ensuring a precise understanding of client needs. This
                         crucial initial step sets the foundation for successful
@@ -505,7 +609,7 @@
                         />
                         Business intelligence
                       </div>
-                      <div class="accordion-item-content">
+                      <div class="accordion-item-content digital__content">
                         We assess project scope, objectives, and preferences,
                         ensuring a precise understanding of client needs. This
                         crucial initial step sets the foundation for successful
@@ -882,27 +986,27 @@
 
       <section id="cases">
         <div class="_container">
-
           <div class="cases__header header-cases">
             <h2 class="header-cases__title">Our cases</h2>
             <div class="header-cases__arrows">
               <button type="button" id="header-cases__arrow-left">
-                <img src="img/cases/arrow_left.svg" alt="">
+                <img src="img/cases/arrow_left.svg" alt="" />
               </button>
               <button type="button" id="header-cases__arrow-right">
-                <img src="img/cases/arrow_right.svg" alt="">
+                <img src="img/cases/arrow_right.svg" alt="" />
               </button>
             </div>
             <div class="header-cases__dots">
-              <span class="_active"></span><span></span><span></span><span></span><span></span>
+              <span class="_active"></span><span></span><span></span
+              ><span></span><span></span>
             </div>
           </div>
-          
+
           <div class="cases__slider slider-cases">
             <div class="slider-cases__line">
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>01</span>
                 </button>
@@ -910,67 +1014,82 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">01</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>02</span>
                 </button>
@@ -978,67 +1097,82 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">02</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>03</span>
                 </button>
@@ -1046,67 +1180,82 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">03</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>04</span>
                 </button>
@@ -1114,67 +1263,82 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">04</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>05</span>
                 </button>
@@ -1182,67 +1346,82 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">05</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>06</span>
                 </button>
@@ -1250,67 +1429,82 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">06</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>07</span>
                 </button>
@@ -1318,67 +1512,83 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">07</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
-              <!-- <div class="slider-cases__item">
+
+              <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>08</span>
                 </button>
@@ -1386,67 +1596,82 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">08</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/cases/arrow_right.svg" alt="">
+                  <img src="img/cases/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>09</span>
                 </button>
@@ -1454,67 +1679,82 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/cases/icon_case.svg" alt="">
+                        <img src="img/cases/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">09</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
               </div>
               <div class="slider-cases__item">
                 <button type="button" class="slider-cases__button">
-                  <img src="img/arrow_right.svg" alt="">
+                  <img src="img/arrow_right.svg" alt="" />
                   <h3>Tech Innovate</h3>
                   <span>10</span>
                 </button>
@@ -1522,64 +1762,79 @@
                   <div class="content-case__header">
                     <div class="content-case__title">
                       <div class="content-case__icon">
-                        <img src="img/icon_case.svg" alt="">
+                        <img src="img/icon_case.svg" alt="" />
                       </div>
-                      <h3>Tech Innovate</h3>                                                 
+                      <h3>Tech Innovate</h3>
                     </div>
                     <div class="content-case__count">10</div>
                   </div>
                   <div class="content-case__tags">
-                    <span>consulting</span><span>automation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span><span>implementation</span>
+                    <span>consulting</span><span>automation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span><span>implementation</span
+                    ><span>implementation</span>
                   </div>
                   <div class="content-case__info info-case">
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Objective</div>
                       <div class="info-case__text">
-                        Increase inventory management efficiency and enhance customer service.
+                        Increase inventory management efficiency and enhance
+                        customer service.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Actions</div>
                       <div class="info-case__text">
-                        1. Implemented an ERP system to automate product and order tracking. <br>
-                        2. Optimized logistics chains and restructured warehouse storage.
+                        1. Implemented an ERP system to automate product and
+                        order tracking. <br />
+                        2. Optimized logistics chains and restructured warehouse
+                        storage.
                       </div>
                     </div>
                     <div class="info-case__section">
                       <div class="info-case__heading">Results</div>
                       <div class="info-case__text">
-                        1. Reduced order processing time by  30% <br>
-                        2. Improved sales forecasting accuracy by  20% <br>
-                        3. Elevated customer satisfaction levels Elevated customer satisfaction levels <br>
-                        4. Elevated customer satisfaction levels Elevated customer satisfactio...
+                        1. Reduced order processing time by 30% <br />
+                        2. Improved sales forecasting accuracy by 20% <br />
+                        3. Elevated customer satisfaction levels Elevated
+                        customer satisfaction levels <br />
+                        4. Elevated customer satisfaction levels Elevated
+                        customer satisfactio...
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="content-case__btnmore">Show more</button>
+                  <button type="button" class="content-case__btnmore">
+                    Show more
+                  </button>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
